@@ -1,0 +1,19 @@
+# Node
+node_modules/
+
+# DXT
+*.dxt
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+
+
+# Otros
+*.tmp

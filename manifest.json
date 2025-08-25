@@ -1,0 +1,40 @@
+{
+  "dxt_version": "0.1",
+  "name": "notion",
+  "version": "1.0.0",
+  "description": "Notion app ",
+  "author": {
+    "name": "LuiccianDev",
+    "email": "LuccianDev@gmail.com"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "",
+    "mcp_config": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@notionhq/notion-mcp-server"
+      ],
+      "env": {
+				"OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer ${user_config.API_NOTION}\", \"Notion-Version\": \"2022-06-28\" }"
+			}
+    }
+  },
+  "user_config": {
+    "API_NOTION": {
+      "type": "string",
+      "title": "Api Notion",
+      "description": "Api Notion ",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "tools_generated": true,
+  "keywords": [
+    "mcp",
+    "notion",
+    "node"
+  ],
+  "license": "MIT"
+}
