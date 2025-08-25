@@ -40,11 +40,11 @@ For more information about DXT, visit [DXT on GitHub](https://github.com/anthrop
 3. Obtain and add your Notion credentials in the configuration.
 4. Package the extension by running:
 
-  ```bash
-  dxt pack
-  ```
+    ```bash
+    dxt pack
+    ```
 
-  This will generate the `.dxt` file.
+    This will generate the `.dxt` file.
 
 5. Install the `.dxt` file in Claude Desktop from Settings > Extensions > Advanced Settings > Extension Installation. You will then be prompted to enter your Notion credentials.
 6. Start MCP Server and verify the integration with Notion.
