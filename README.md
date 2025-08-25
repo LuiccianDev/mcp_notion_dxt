@@ -1,49 +1,58 @@
 
-# MCP Notion
+<div align="center">
+  <h1> MCP Notion</h1>
+  <p>
+  <em>Server for manipulating Notion documents via MCP</em>
+  </p>
 
-Este proyecto integra MCP Server con Notion de forma local, utilizando el empaquetador DXT para Claude Desktop.
+  [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+  [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-brightgreen)](https://modelcontextprotocol.io)
+  [![Node.js](https://img.shields.io/badge/Node.js-%3E=20.0.0-green)](https://nodejs.org/)
+    [![DXT](https://img.shields.io/badge/DXT-%40anthropic--ai%2Fdxt-blue)](https://github.com/anthropics/dxt)
 
-## Descripción
+</div>
 
-Permite conectar y sincronizar datos entre MCP Server y Notion, facilitando la gestión y automatización de flujos de trabajo.
+## Description
 
-## Estructura del proyecto
+Allows you to connect and synchronize data between MCP Server and Notion, making workflow management and automation easier.
 
-- `manifest.json`: Archivo de configuración principal.
+## Project Structure
 
-## Requisitos
+- `manifest.json`: Main configuration file.
+
+## Requirements
 
 - Node.js
-- Instalar la extensión DXT con el siguiente comando:
+- Install the DXT extension with the following command:
 
 ```bash
 npm install -g @anthropic-ai/dxt
 ```
 
-Para más información sobre DXT visita [DXT en GitHub](https://github.com/anthropics/dxt).
+For more information about DXT, visit [DXT on GitHub](https://github.com/anthropics/dxt).
 
-## Instalación
+## Installation
 
-## Uso
+## Usage
 
-1. Clona este repositorio en tu máquina local.
-2. Configura el archivo `manifest.json` según tus necesidades.
-3. Obtén y agrega tus credenciales de Notion en la configuración.
-4. Empaqueta la extensión ejecutando:
+1. Clone this repository to your local machine.
+2. Configure the `manifest.json` file as needed.
+3. Obtain and add your Notion credentials in the configuration.
+4. Package the extension by running:
 
-    ```bash
-    dxt pack
-    ```
+  ```bash
+  dxt pack
+  ```
 
-    Esto generará el archivo `.dxt`.
+  This will generate the `.dxt` file.
 
-5. Instala el archivo `.dxt` en Claude Desktop desde Configuraciones > Extensiones > Configuración avanzada > Instalación de extensión. Luego te pedirá que indiques tus credenciales de Notion.
-6. Inicia MCP Server y verifica la integración con Notion.
+5. Install the `.dxt` file in Claude Desktop from Settings > Extensions > Advanced Settings > Extension Installation. You will then be prompted to enter your Notion credentials.
+6. Start MCP Server and verify the integration with Notion.
 
-Para más detalles sobre credenciales y configuración, consulta el proyecto original [Notion MCP Server](https://github.com/makenotion/notion-mcp-server).
+For more details about credentials and configuration, see the original project [Notion MCP Server](https://github.com/makenotion/notion-mcp-server).
 
-## Licencia
+## License
 
-Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para ver los términos completos.
+This project is distributed under the MIT license. See the [LICENSE](./LICENSE) file for full terms.
 
-Parte del código y la integración se basan en el proyecto original [Notion MCP Server](https://github.com/makenotion/notion-mcp-server), que también utiliza la licencia MIT y cuyo copyright es de Notion Labs, Inc. Si reutilizas o modificas este código, debes mantener los avisos de copyright y respetar los términos de la licencia MIT del proyecto fuente.
+Part of the code and integration is based on the original project [Notion MCP Server](https://github.com/makenotion/notion-mcp-server), which also uses the MIT license and is copyright Notion Labs, Inc. If you reuse or modify this code, you must keep the copyright notices and respect the terms of the MIT license of the source project.
